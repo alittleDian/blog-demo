@@ -17,9 +17,9 @@
 
     aaa
 
-    > [!tip]
-    > 
-    > powershell 通常禁止执行`npm`脚本，在窗口中输入`cmd`切换到命令提示符再执行。
+  > [!tip]
+  > 
+  > powershell 通常禁止执行`npm`脚本，在窗口中输入`cmd`切换到命令提示符再执行。
 
     aaa
     
