@@ -202,3 +202,6 @@
 
    然后就可以在 github 中查看 action 的执行情况，完成后点击 [My Awesome Project](https://alittledian.github.io/blog-demo/) 查看。
 
+> 参考链接
+>
+> - [【水贴 && 教程】如何用 vitepress + Github Pages 部署你的项目文档 - 闲聊吹水 - Koishi Forum](https://forum.koishi.xyz/t/topic/11125)
