@@ -16,11 +16,10 @@
     ```
 
     > [!tip]
-    >
     > powershell 通常禁止执行`npm`脚本，在窗口中输入`cmd`切换到命令提示符再执行。
-
+    
     初始化 vitepress，按照以下设置：
-
+    
     ```
     npx vitepress init
     
@@ -52,9 +51,9 @@
     │
     └  Done! Now run pnpm run docs:dev and start writing.  //在控制台输入 npm run docs:dev 以运行 vitepress 。
     ```
-
+    
     构建，随后打开 http://localhost:5173/ 看看项目是否正常运行。
-
+    
     ```
     npm run docs:dev
     ```
