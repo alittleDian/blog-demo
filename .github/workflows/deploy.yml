@@ -65,7 +65,9 @@ jobs:
 
         # 安装依赖
       - name: Install dependencies
-        run: pnpm install
+        run: |
+          pnpm install
+          pnpm approve-builds
 
         # 构建项目
       - name: Build blog project
