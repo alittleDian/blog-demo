@@ -1,15 +1,43 @@
-name: Deploy VitePress site
+name: Deploy Pages
 
+# 触发条件，push到main分支或者pull request到main分支
 on:
   push:
-    branches:
-      - main   
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+  # 支持手动在工作流上触发
+  workflow_dispatch:
+
+# 设置时区
+env:
+  TZ: Asia/Shanghai
+
+# 权限设置
+permissions:
+  # 允许读取仓库内容的权限。
+  contents: read
+  # 允许写入 GitHub Pages 的权限。
+  pages: write
+  # 允许写入 id-token 的权限。
+  id-token: write
+
+# 并发控制配置
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      # 拉取代码
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          # 保留 Git 信息
+          fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v3
@@ -24,9 +52,13 @@ jobs:
 
       - name: List dist files
         run: ls -R docs/.vitepress/dist
-
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: docs/.vitepress/dist
+        id: deployment
+        uses: actions/deploy-pages@v4
