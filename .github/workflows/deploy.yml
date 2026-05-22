@@ -3,7 +3,7 @@ name: Deploy VitePress site
 on:
   push:
     branches:
-      - master   # 你开发用的分支
+      - main   
 
 jobs:
   deploy:
