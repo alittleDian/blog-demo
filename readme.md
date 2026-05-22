@@ -1,7 +1,3 @@
-> [!tip]
-> 
-> powershell 通常禁止执行`npm`脚本，在窗口中输入`cmd`切换到命令提示符再执行。
-
 1. **下载 Node.js**
 
    [Node.js — 在任何地方运行 JavaScript](https://nodejs.org/zh-cn)
@@ -19,10 +15,13 @@
     npm add -D vitepress
     ```
 
+    aaa
+
     > [!tip]
     > 
     > powershell 通常禁止执行`npm`脚本，在窗口中输入`cmd`切换到命令提示符再执行。
 
+    aaa
     
     初始化 vitepress，按照以下设置：
 
