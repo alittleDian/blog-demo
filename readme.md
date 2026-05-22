@@ -15,13 +15,7 @@
     npm add -D vitepress
     ```
 
-    aaa
-
-  > [!tip]
-  > 
-  > powershell 通常禁止执行`npm`脚本，在窗口中输入`cmd`切换到命令提示符再执行。
-
-    aaa
+    > powershell 通常禁止执行`npm`脚本，在窗口中输入`cmd`切换到命令提示符再执行。
     
     初始化 vitepress，按照以下设置：
 
@@ -56,13 +50,13 @@
     │
     └  Done! Now run pnpm run docs:dev and start writing.  //在控制台输入 npm run docs:dev 以运行 vitepress 。
     ```
-
+    
     构建，随后打开 http://localhost:5173/ 看看项目是否正常运行。
 
     ```
     npm run docs:dev
     ```
-
+    
 3. **新建仓库**
 
     github 新建 public 仓库，不要添加 readme 或是其他东西。创建完成后，在仓库首页启用 github action：`Settings > Pages > Build and deployment > GitHub Actions` 
