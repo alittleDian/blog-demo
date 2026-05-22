@@ -15,13 +15,9 @@
     npm add -D vitepress
     ```
 
-    
-
-    >  [!tip]
+    > [!tip]
     > 
     > powershell 通常禁止执行`npm`脚本，在窗口中输入`cmd`切换到命令提示符再执行。
-
-    
 
     初始化 vitepress，按照以下设置：
 
