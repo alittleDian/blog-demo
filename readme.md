@@ -15,7 +15,7 @@
     npm add -D vitepress
     ```
 
-    > [!Note]
+    > [!tip]
     >
     > powershell 通常禁止执行`npm`脚本，在窗口中输入`cmd`切换到命令提示符再执行。
 
@@ -23,41 +23,41 @@
 
     ```
     npx vitepress init
+    
+    ┌  Welcome to VitePress!
+    │
+    ◇  Where should VitePress initialize the config?  //VitePress 应该在哪里初始化配置？
+    │  ./docs
+    │
+    ◇  Site title:   //站点标题
+    │  My Awesome Project
+    │
+    ◇  Site description:  //站点描述
+    │  A VitePress Site
+    │
+    ◇  Theme:  //主题
+    │  Default Theme
+    │
+    ◇  Use TypeScript for config and theme files?  //使用 TypeScript 来设置配置文件和主题文件？
+    │  Yes
+    │
+    ◇  Add VitePress npm scripts to package.json?  //在 package.json 里加入 vitepress 的 npm 启动文件？
+    │  Yes
+    │
+    ◇  Add a prefix for VitePress npm scripts?  //为 VitePress npm 脚本添加前缀？
+    │  Yes
+    │
+    ◇  Prefix for VitePress npm scripts:  //输入前缀
+    │  docs
+    │
+    └  Done! Now run pnpm run docs:dev and start writing.  //在控制台输入 npm run docs:dev 以运行 vitepress 。
     ```
 
-    > ┌  Welcome to VitePress!
-    > │
-    > ◇  Where should VitePress initialize the config?  //VitePress 应该在哪里初始化配置？
-    > │  ./docs
-    > │
-    > ◇  Site title:   //站点标题
-    > │  My Awesome Project
-    > │
-    > ◇  Site description:  //站点描述
-    > │  A VitePress Site
-    > │
-    > ◇  Theme:  //主题
-    > │  Default Theme
-    > │
-    > ◇  Use TypeScript for config and theme files?  //使用 TypeScript 来设置配置文件和主题文件？
-    > │  Yes
-    > │
-    > ◇  Add VitePress npm scripts to package.json?  //在 package.json 里加入 vitepress 的 npm 启动文件？
-    > │  Yes
-    > │
-    > ◇  Add a prefix for VitePress npm scripts?  //为 VitePress npm 脚本添加前缀？
-    > │  Yes
-    > │
-    > ◇  Prefix for VitePress npm scripts:  //输入前缀
-    > │  docs
-    > │
-    > └  Done! Now run pnpm run docs:dev and start writing.  //在控制台输入 npm run docs:dev 以运行 vitepress 。
+    构建，随后打开 http://localhost:5173/ 看看项目是否正常运行。
 
     ```
     npm run docs:dev
     ```
-
-    随后打开 http://localhost:5173/ 看看项目是否正常运行。
 
 3. **新建仓库**
 
